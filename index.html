@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Cut Size Calculator</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="/images/small-profile.png"
+    />
+  </head>
+  <body>
+    <h1 class="large">CUT SIZE CALCULATOR!</h1>
+    <hr />
+
+    <div class="flex">
+      <form name="form1" id="cutSizeCalc">
+        <div class="general-dimensions">
+          <h2>General Dimensions:</h2>
+          <p>
+            Divider Size:
+            <input
+              type="number"
+              name="Divider-Size"
+              id="dividerSize"
+              step="any"
+              min="1"
+              max="10000"
+            />
+          </p>
+          <p>
+            Retainer Size:
+            <input
+              type="number"
+              name="Retainer-Size"
+              id="retainerSize"
+              step="any"
+              min="1"
+              max="10000"
+            />
+          </p>
+          <p>
+            VO Height:
+            <input
+              type="number"
+              name="VO-Height"
+              id="voHeight"
+              step="any"
+              min="1"
+              max="10000"
+            />
+          </p>
+          <p>
+            VO Width:
+            <input
+              type="number"
+              name="VO-Width"
+              id="voWidth"
+              step="any"
+              min="1"
+              max="10000"
+            />
+          </p>
+        </div>
+        <div class="side-labels">
+          <h2>Side Labels:</h2>
+          <p>
+            Top:
+            <select id="topLabel">
+              <option value="1">Retainer</option>
+              <option value="2">Divider</option>
+            </select>
+          </p>
+          <p>
+            Right:
+            <select id="rightLabel">
+              <option value="1">Retainer</option>
+              <option value="2">Divider</option>
+            </select>
+          </p>
+          <p>
+            Bottom:
+            <select id="bottomLabel">
+              <option value="1">Retainer</option>
+              <option value="2">Divider</option>
+            </select>
+          </p>
+
+          <p>
+            Left:
+            <select id="leftLabel">
+              <option value="1">Retainer</option>
+              <option value="2">Divider</option>
+            </select>
+          </p>
+        </div>
+        <input type="submit" value="SUBMIT" class="large bold green btn" />
+      </form>
+    </div>
+
+    <section class="section result-box flex">
+      <div>
+        <p id="widthCutSize" class="large in-line">?</p>
+        <p class="">Width Cut Size! <br />👍🏻</p>
+      </div>
+      <p>X</p>
+      <div>
+        <p id="heightCutSize" class="large in-line">?</p>
+        <p>Height Cut Size! <br />👍🏻</p>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
